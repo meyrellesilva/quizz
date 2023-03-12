@@ -1,0 +1,124 @@
+/* Reset de estilos padrão */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos globais */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos do contêiner principal */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Estilos do quiz */
+  #quiz {
+    margin: 20px auto;
+  }
+  
+  #question {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .answer {
+    margin: 10px auto;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  /* Estilos do botão submit */
+  #submit {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2196F3;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #submit:hover {
+    background-color: #0D47A1;
+  }
+  
+  /* Estilos da mensagem de pontuação */
+  #score {
+    display: none;
+    margin: 20px auto;
+    font-size: 24px;
+  }
+  
+  /* Estilos dos balões */
+  #balloons {
+    display: none;
+    position: relative;
+    margin: 50px auto 0;
+    width: 100px;
+    height: 150px;
+  }
+  
+  .balloon {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background-color: #FFC107;
+    border-radius: 50% 50% 0 0;
+    bottom: -40px;
+    animation-name: rise;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes rise {
+    from {
+      bottom: -40px;
+    }
+    to {
+      bottom: 500px;
+    }
+  }
+  
+  .balloon:nth-child(1) {
+    left: 5px;
+    animation-delay: 0s;
+  }
+  
+  .balloon:nth-child(2) {
+    left: 25px;
+    animation-delay: 0.5s;
+  }
+  
+  .balloon:nth-child(3) {
+    left: 50px;
+    animation-delay: 1s;
+  }
+  
+  .balloon:nth-child(4) {
+    left: 70px;
+    animation-delay: 1.5s;
+  }
+  
+  .balloon:nth-child(5) {
+    left: 90px;
+    animation-delay: 2s;
+  }
+  
+  .balloon:nth-child(6) {
+    left: 115px;
+    animation-delay: 2.5s;
+  }
+  
